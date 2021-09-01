@@ -25,6 +25,8 @@ public class UserRepositoryTests {
 	public void testCreateUser() {
 		User user = new User();
 		user.setPnr("df1234");
+		user.setSeatNO("w3");
+		
 		user.setEmail("ravikumar@gmail.com");
 		user.setPassword("ravi2020");
 		user.setFirstName("Ravi");
@@ -43,10 +45,12 @@ public class UserRepositoryTests {
 		
 	}
 	
+	
 	/*
-	 * @Test public void testFindByEmail() { String email = "nam@codejava.net"; User
-	 * user = repo.findByEmail(email);
+	 * @Test public void testFindByEmail() { String email = ""; User user =
+	 * repo.findByEmail(email);
 	 * 
 	 * assertThat(user.getEmail()).isEqualTo(email); }
 	 */
+	 
 }

@@ -19,6 +19,12 @@ public class User {
 	@Column(nullable = false, unique = true, length = 45)
 	private String pnr;
 	
+	@Column(nullable = false, unique = true, length = 3)
+	private String seatNO;
+	
+	@Column(nullable = false, unique = true, length = 3)
+	private String baggage;
+	
 	
 	@Column(nullable = false, unique = true, length = 45)
 	private String email;
@@ -46,6 +52,28 @@ public class User {
 
 	public void setPnr(String pnr) {
 		this.pnr = pnr;
+	}
+	
+	
+
+	public String getSeatNO() {
+		return seatNO;
+	}
+
+	public void setSeatNO(String seatNO) {
+		this.seatNO = seatNO;
+	}
+
+	
+	
+
+
+	public String getBaggage() {
+		return baggage;
+	}
+
+	public void setBaggage(String baggage) {
+		this.baggage = baggage;
 	}
 
 	public String getEmail() {
